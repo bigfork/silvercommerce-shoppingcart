@@ -25,18 +25,30 @@
           "issues": "http://github.com/silvercommerce/shoppingcart/issues"
       },
       "require": {
-          "silverstripe/framework": "~4.0",
-          "silvercommerce/settings": "~1.0",
-          "silvercommerce/orders-admin": "~1.0",
-          "silvercommerce/discounts": "~2.0",
-          "silvercommerce/postage": "~1.0"
+          "silverstripe/framework": "^5",
+          "silvercommerce/settings": "dev-ss5"
+          "silvercommerce/orders-admin": "dev-ss5",
+          "silvercommerce/discounts": "dev-ss5",
+          "silvercommerce/postage": "dev-ss5"
       },
-      "require-dev": {
-        "silvercommerce/catalogue-admin": "^1.0",
-        "silvercommerce/tax-admin": "^1.0",
-        "phpunit/phpunit": "^5.7",
-        "squizlabs/php_codesniffer": "^3.0"
-      },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bigfork/silvercommerce-orders-admin"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bigfork/silvercommerce-settings"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bigfork/silvercommerce-discounts"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/bigfork/silvercommerce-postage"
+        }
+    ],
       "extra": {
           "expose": [
               "client/dist"
